@@ -1,0 +1,994 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40">
+  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+    <Title>BANK_2</Title>
+    <Author>C270314</Author>
+    <Keywords>Escopo padrão</Keywords>
+    <LastAuthor>C270314</LastAuthor>
+    <Created>20260720</Created>
+    <Company>C270314</Company>
+  </DocumentProperties>
+  <CustomDocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+    <APPLICATION dt:dt="string">SLO</APPLICATION>
+    <OBJECT_NAME dt:dt="string">Banco</OBJECT_NAME>
+    <VERSION dt:dt="string">SAP S/4HANA 2023 - Escopo padrão - 21.09.2026</VERSION>
+    <SYSTEM dt:dt="string">GDP / 300</SYSTEM>
+    <LANGUAGE dt:dt="string">P</LANGUAGE>
+  </CustomDocumentProperties>
+  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+    <Colors>
+      <Color>
+        <Index>15</Index>
+        <RGB>#BFBFBF</RGB>
+      </Color>
+    </Colors>
+  </OfficeDocumentSettings>
+  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+    <WindowHeight>14385</WindowHeight>
+    <WindowWidth>18960</WindowWidth>
+    <WindowTopX>120</WindowTopX>
+    <WindowTopY>120</WindowTopY>
+    <ActiveSheet>0</ActiveSheet>
+    <RefModeR1C1/>
+    <ProtectStructure>False</ProtectStructure>
+    <ProtectWindows>False</ProtectWindows>
+  </ExcelWorkbook>
+  <Styles>
+   <Style ss:ID="TITLE">
+    <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+    <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="20" ss:Color="#EFFEF9"
+     ss:Bold="1" ss:Italic="1"/>
+    <Interior ss:Color="#427CAC" ss:Pattern="Solid"/>
+   </Style>
+   <Style ss:ID="VERSION">
+    <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+    <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#EFFEF9"/>
+    <Interior ss:Color="#427CAC" ss:Pattern="Solid"/>
+   </Style>
+   <Style ss:ID="INFORMATION">
+    <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+    <Borders>
+     <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    </Borders>
+     <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+    <Interior ss:Color="#BFBFBF" ss:Pattern="Solid"/>
+    <NumberFormat/>
+    <Protection/>
+   </Style>
+   <Style ss:ID="BACKGROUND">
+    <Interior ss:Color="#BFBFBF" ss:Pattern="Solid"/>
+   </Style>
+   <Style ss:ID="DOCU">
+    <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   </Style>
+   <Style ss:ID="C_HEADER1">
+    <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+    <Borders>
+     <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+     <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+     <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+     <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+    </Borders>
+    <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+    <Interior ss:Color="#EFF4F9" ss:Pattern="Solid"/>
+    <Protection/>
+   </Style>
+   <Style ss:ID="C_HEADER2">
+    <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+    <Borders>
+     <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+     <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+     <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+     <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+    </Borders>
+    <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="8" ss:Color="#000000" ss:Bold="0"/>
+    <Interior ss:Color="#EFF4F9" ss:Pattern="Solid"/>
+    <Protection/>
+   </Style>
+   <Style ss:ID="FIELDHEADER">
+    <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+    <Borders>
+     <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+     <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+     <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+     <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+    </Borders>
+    <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#EFFEF9"/>
+    <Interior ss:Color="#427CAC" ss:Pattern="Solid"/>
+    <Protection/>
+   </Style>
+   <Style ss:ID="FIELDHEADERMAND">
+    <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+    <Borders>
+     <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+     <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+     <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+     <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+    </Borders>
+    <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#EFFEF9"/>
+    <Interior ss:Color="#F0AB00" ss:Pattern="Solid"/>
+    <Protection/>
+   </Style>
+   <Style ss:ID="FIELDLIST">
+    <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+    <Borders>
+     <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+     <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+     <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+     <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+    </Borders>
+    <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+    <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+    <Protection/>
+   </Style>
+    <Style ss:ID="FIELD">
+      <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+      <Interior/>
+      <NumberFormat ss:Format="@"/>
+      <Protection ss:Protected="0"/>
+    </Style>
+    <Style ss:ID="DATE">
+      <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+      <Interior/>
+      <NumberFormat ss:Format="dd\.mm\.yyyy"/>
+      <Protection ss:Protected="0"/>
+    </Style>
+    <Style ss:ID="TIME">
+      <Font ss:FontName="Arial" x:Family="Swiss"/>
+      <Interior/>
+      <NumberFormat ss:Format="hh:mm:ss"/>
+      <Protection ss:Protected="0"/>
+    </Style>
+    <Style ss:ID="DATETIME">
+      <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+      <Interior/>
+      <NumberFormat ss:Format="yyyy\-mm\-dd\ hh:mm:ss"/>
+      <Protection ss:Protected="0"/>
+    </Style>
+    <Style ss:ID="INTRO">
+      <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+      <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+      <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+      <NumberFormat ss:Format="@"/>
+      <Protection ss:Protected="0"/>
+    </Style>
+    <Style ss:ID="INTRO_UT">
+      <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+      <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+      <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+      <NumberFormat ss:Format="@"/>
+      <Protection ss:Protected="0"/>
+    </Style>
+    <Style ss:ID="FIELDMAND">
+      <Borders>
+        <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </Borders>
+      <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+      <Interior ss:Color="#F0AB00" ss:Pattern="Solid"/>
+      <NumberFormat ss:Format="@"/>
+      <Protection ss:Protected="0"/>
+    </Style>
+    <Style ss:ID="DATEMAND">
+      <Borders>
+        <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </Borders>
+      <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+      <Interior ss:Color="#F0AB00" ss:Pattern="Solid"/>
+      <NumberFormat ss:Format="dd\.mm\.yyyy"/>
+      <Protection ss:Protected="0"/>
+    </Style>
+    <Style ss:ID="TIMEMAND">
+      <Borders>
+        <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </Borders>
+      <Font ss:FontName="Arial" x:Family="Swiss"/>
+      <Interior ss:Color="#F0AB00" ss:Pattern="Solid"/>
+      <NumberFormat ss:Format="hh:mm:ss"/>
+      <Protection ss:Protected="0"/>
+    </Style>
+    <Style ss:ID="DATETIMEMAND">
+      <Borders>
+        <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </Borders>
+      <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+      <Interior ss:Color="#F0AB00" ss:Pattern="Solid"/>
+      <NumberFormat ss:Format="yyyy\-mm\-dd\ hh:mm:ss"/>
+      <Protection ss:Protected="0"/>
+    </Style>
+  </Styles>
+  <Names>
+    <NamedRange ss:Name="Fields" ss:RefersTo="='Lista de campos'!R1C1"/>
+    <NamedRange ss:Name="Instructions" ss:RefersTo="=Introdução!R1C1"/>
+  </Names>
+ <Worksheet ss:Name="Introdução" ss:Protected="1">
+  <Table ss:ExpandedColumnCount="9" x:FullColumns="1" x:FullRows="1" ss:StyleID="BACKGROUND">
+   <Column ss:StyleID="BACKGROUND" ss:AutoFitWidth="0" ss:Width="19.5"/>
+   <Column ss:StyleID="BACKGROUND" ss:AutoFitWidth="0" ss:Width="14.25"/>
+   <Column ss:StyleID="BACKGROUND" ss:AutoFitWidth="0" ss:Width="19.5"/>
+   <Column ss:StyleID="BACKGROUND" ss:AutoFitWidth="0" ss:Width="671.25"/>
+   <Column ss:StyleID="BACKGROUND" ss:AutoFitWidth="0" ss:Width="14.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="30" ss:StyleID="TITLE">
+    <Cell ss:MergeAcross="8"><Data ss:Type="String">Introdução a modelos de migração de dados</Data><NamedCell ss:Name="Fields"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="VERSION">
+    <Cell ss:MergeAcross="8"><Data ss:Type="String">Version SAP S/4HANA 2023 - Escopo padrão - 21.09.2026 © Copyright SAP SE. All rights reserved.</Data></Cell>
+   </Row>
+<Row ss:Height="15"><Cell ss:Index="2" ss:MergeAcross="4" ss:StyleID="BACKGROUND"/></Row>
+<Row><Cell ss:Index="2" ss:StyleID="INTRO"/><Cell ss:StyleID="INTRO"/><Cell ss:StyleID="INTRO"/><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO_UT"><Data ss:Type="String">Síntese
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row ss:AutoFitHeight="0" ss:Height="060">
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Um modelo de migração (file de planilha eletrônica XML 2003 do Microsoft
+Excel) é composto por diferentes folhas visíveis na parte inferior do
+modelo de migração. Você utiliza as diferentes folhas para indicar os
+dados pertencentes a diferentes estruturas de dados. Por exemplo, o
+modelo de migração para o objeto de migração 'Produto' contém uma folha
+para dados básicos, uma folha para dados de centro, etc. Algumas folhas
+são obrigatórias, outras são opcionais.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row ss:AutoFitHeight="0" ss:Height="045">
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Um modelo de migração é baseado na visão ativa do objeto de migração
+relevante. Você pode encontrar informações sobre a visão ativa no file
+XML do Microsoft Excel. No file, navegue para <LS>File</>-> <LS>Info</>.
+Você pode encontrar o nome da visão ativa em <LS>Características</>->
+<LS>Tags</>.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Pré-requisitos
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row ss:AutoFitHeight="0" ss:Height="030">
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">No file de planilha eletrônica XML 2003 do Microsoft Excel, navegue para
+'File' -> 'Opções' -> 'Avançado'. Na opção 'Ao calcular esta pasta de
+trabalho:', verifique se a opção 'Definir precisão exibida' está
+selecionada.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO_UT"><Data ss:Type="String">Informações sobre tamanhos de files
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">SAP S/4HANA Cloud
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row ss:AutoFitHeight="0" ss:Height="045">
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Se você estiver migrando dados para o SAP S/4HANA Cloud, o limite de
+tamanho padrão para cada file XML carregado é 100MB.  Se necessário,
+você pode juntar vários files em um file zip. Considere que o tamanho
+combinado de todos os files XML que você quer adicionar ao file zip não
+pode exceder 160 MB.  O limite para o file zip continua sendo 100 MB.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">SAP S/4HANA On-Premise
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Se você estiver migrando dados para o SAP S/4HANA, o limite de tamanho
+padrão para cada file XML carregado é 100MB.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row ss:AutoFitHeight="0" ss:Height="045">
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Você pode aumentar o limite de tamanho para cada file XML carregado até
+160MB modificando o parâmetro do sistema (icm/HTTP/max_request_size_KB).
+Se necessário, você pode juntar vários files em um file zip. Considere
+que o tamanho combinado de todos os files XML que você quer adicionar ao
+file zip não pode exceder 160 MB. O limite para o file zip continua
+sendo 160MB com o parâmetro do sistema ajustado.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO_UT"><Data ss:Type="String">A folha Lista de campos
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row ss:AutoFitHeight="0" ss:Height="030">
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">A folha 'Lista de campos' é uma das primeiras folhas no modelo de
+migração. Você pode utilizar esta folha para obter uma síntese dos dados
+previstos em uma localização central.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row ss:AutoFitHeight="0" ss:Height="030">
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Contém informação sobre as folhas obrigatórias e opcionais, bem como
+informações detalhadas para cada folha (por exemplo, o tipo de dados e o
+comprimento previstos para os campos em cada folha).
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Na folha 'Lista de campos', você pode visualizar as seguintes
+informações para cada campo no modelo de migração:
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:StyleID="INTRO"><Data ss:Type="String">•</Data></Cell><Cell ss:StyleID="INTRO"><Data ss:Type="String">O nome da folha e se é obrigatória ou opcional. Somente as folhas
+obrigatórias têm o sufixo 'Obrigatório', por exemplo, 'Dados básicos
+(obrigatórios)'. Todas as outras folhas são opcionais.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Nota:
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row ss:AutoFitHeight="0" ss:Height="030">
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Você pode rapidamente obter uma síntese das folhas obrigatórias e
+opcionais olhando para a cor dos nomes das folhas na parte inferior do
+modelo de migração. O nome das folhas obrigatórias tem a cor laranja e
+as folhas opcionais têm a cor azul.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:StyleID="INTRO"><Data ss:Type="String">•</Data></Cell><Cell ss:StyleID="INTRO"><Data ss:Type="String">O nome do grupo para os campos em uma folha.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:StyleID="INTRO"><Data ss:Type="String">•</Data></Cell><Cell ss:StyleID="INTRO"><Data ss:Type="String">Os campos individuais em cada folha, bem como se os campos são
+obrigatórios para uma folha.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:StyleID="INTRO"><Data ss:Type="String">•</Data></Cell><Cell ss:StyleID="INTRO"><Data ss:Type="String">Informações sobre o formato previsto dos campos individuais, por
+exemplo, o tipo de dados e o comprimento.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Nota:
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row ss:AutoFitHeight="0" ss:Height="060">
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Na folha de lista de campos, determinadas informações técnicas sobre os
+campos estão ocultas por padrão. As colunas 'Estrutura SAP' e 'Campo
+SAP’ (colunas 8 e 9) estão ocultas por padrão. A coluna 'Estrutura SAP'
+é o nome técnico da estrutura a que o campo pertence. A coluna 'Campo
+SAP' é o nome técnico do campo. Para visualizar essas colunas, selecione
+as colunas adjacentes aos dois lados das colunas que você deseja
+visualizar. Clique com o botão direito na sua seleção e selecione
+'Visualizar'.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row ss:AutoFitHeight="0" ss:Height="045">
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Se você desejar extrair dados do SAP ERP, o nome técnico da estrutura e
+o nome técnico do campo correspondem frequentemente ao nome da tabela e
+ao nome do campo do SAP ERP. Além disso, as informações de release SAP
+(2568909) para o conteúdo de migração de dados de SAP S/4HANA Cloud
+utilizam os nomes técnicos das estruturas e dos campos.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO_UT"><Data ss:Type="String">
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO_UT"><Data ss:Type="String">Trabalhar com folhas
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Para cada modelo de migração, você deve indicar dados para as folhas
+obrigatórias e para as folhas opcionais relevantes para seu projeto.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:StyleID="INTRO"><Data ss:Type="String">•</Data></Cell><Cell ss:StyleID="INTRO"><Data ss:Type="String">Folhas obrigatórias (laranja)
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row ss:AutoFitHeight="0" ss:Height="030">
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">As folhas obrigatórias representam o conjunto mínimo de dados que você
+deve fornecer para a migração de dados. Preencha todos os campos
+obrigatórios.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:StyleID="INTRO"><Data ss:Type="String">•</Data></Cell><Cell ss:StyleID="INTRO"><Data ss:Type="String">Folhas opcionais (azul)
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Utilize folhas opcionais em função do seu escopo de migração e dados de
+sistema antigo disponíveis.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO_UT"><Data ss:Type="String">Visualização de informação adicional para cada coluna
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row ss:AutoFitHeight="0" ss:Height="030">
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Na linha 8, você pode visualizar os nomes dos campos no SAP S/4HANA, bem
+como informações adicionais, como o formato previsto (por exemplo, o
+tipo de dados e o comprimento). Observe que você deve expandir a linha
+para visualizar essas informações adicionais.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Alguns campos são obrigatórios, outros são opcionais. O curinga (*)
+junto ao nome de um campo indica que o campo é obrigatório.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Nota:
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row ss:AutoFitHeight="0" ss:Height="030">
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Embora uma folha opcional possa conter colunas obrigatórias, se a folha
+não for relevante para seu projeto, não é necessário preencher com dados
+as colunas obrigatórias na folha.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Nota:
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row ss:AutoFitHeight="0" ss:Height="030">
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">As linhas 4, 5 e 6 estão ocultas por padrão. A linha 4 é o nome técnico
+da estrutura (corresponde ao nome da folha). A linha 5 é o nome técnico
+do campo (corresponde à linha 8 - a descrição do campo). A linha 6
+contém informações técnicas, como o tipo de dados e o comprimento.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row ss:AutoFitHeight="0" ss:Height="030">
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Para visualizar essas linhas, selecione as linhas adjacentes aos dois
+lados das linhas que você deseja visualizar. Clique com o botão direito
+na sua seleção e selecione 'Visualizar'.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO_UT"><Data ss:Type="String">Trabalhar com diferentes tipos de dados
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row ss:AutoFitHeight="0" ss:Height="030">
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Você pode visualizar os tipos de dados para um campo na linha 8
+(consulte 'Visualização de informação adicional para cada coluna' ac
+ima). Dependendo do campo, poderá ser necessário um dos seguintes tipos
+de dados:
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:StyleID="INTRO"><Data ss:Type="String">•</Data></Cell><Cell ss:StyleID="INTRO"><Data ss:Type="String">Texto
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row ss:AutoFitHeight="0" ss:Height="045">
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">São permitidos letras, números e caracteres especiais. No cockpit de
+migração do SAP S/4HANA, você pode mapear os valores de determinados
+campos com o texto de tipo de dados (normalmente os campos com
+comprimento: 80) para os seus valores fixados SAP S/4HANA corretos. Você
+pode efetuar este mapeamento de valores no cockpit de migração do SAP
+S/4HANA, quando iniciar a transferência (na etapa 'Converter valores').
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:StyleID="INTRO"><Data ss:Type="String">•</Data></Cell><Cell ss:StyleID="INTRO"><Data ss:Type="String">Número
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row ss:AutoFitHeight="0" ss:Height="090">
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Insira números com decimais no formato específico de país relevante, por
+exemplo, 12.34 (Estados Unidos) ou 12,34 (Alemanha). Para campos com
+decimais, o comprimento declarado inclui decimais (se necessário), por
+exemplo, se a informação para os estados de coluna:  Comprimento: 8,
+decimais: 3, então um número como 12345.678 é permitido. Observe que as
+casas decimais não são obrigatórias. Neste exemplo, você pode indicar um
+número inteiro até o comprimento 8 sem casas decimais, por exemplo, ‘1’.
+Este número seria definido internamente como ‘1.000’. Para números
+negativos, garanta que um sinal negativo ('-') precede diretamente o
+número, por exemplo, '-100'. Considere que as moedas com mais de 3 casas
+decimais não são suportadas.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row ss:AutoFitHeight="0" ss:Height="030">
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Considere que o comprimento de campo máximo suportado por Microsoft
+Excel é 15 dígitos (incluindo casas decimais). Se você tiver números
+mais compridos, utilize a opção para transferir dados para S/4HANA
+utilizando tabelas de staging.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:StyleID="INTRO"><Data ss:Type="String">•</Data></Cell><Cell ss:StyleID="INTRO"><Data ss:Type="String">Data
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row ss:AutoFitHeight="0" ss:Height="030">
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Insira a data no formato específico do seu país, por exemplo, 12/31/1998
+(Estados Unidos) ou 31.12.1998 (Alemanha). Observe que o Microsoft Excel
+reconhece automaticamente diferentes formatos de data e transforma-os
+automaticamente para o formato XML correto.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:StyleID="INTRO"><Data ss:Type="String">•</Data></Cell><Cell ss:StyleID="INTRO"><Data ss:Type="String">Tempo
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Insira a hora no formato HH:MM:SS, por exemplo, 02:52:40
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO_UT"><Data ss:Type="String">Copiar dados para uma folha
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row ss:AutoFitHeight="0" ss:Height="030">
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Ao copiar dados para uma folha do Microsoft Excel, clique sempre com o
+botão direito na célula relevante e selecione a opção de colar 'Valores
+(V)'. Evite colar dados que incluam formatação e fórmulas no modelo de
+migração, pois isso irá corromper a estrutura do modelo de migração XML.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO_UT"><Data ss:Type="String">Utilizar a função Procurar e substituir
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row ss:AutoFitHeight="0" ss:Height="030">
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Não utilize a função 'Procurar e substituir' do Microsoft Excel. Se você
+modificar dados utilizando esta função, também pode modificar os nomes
+dos campos sem querer e corromper a estrutura do modelo de migração XML.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO_UT"><Data ss:Type="String">Gravar o modelo de migração
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row ss:AutoFitHeight="0" ss:Height="030">
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Certifique-se de que você só grava o modelo de migração como um file de
+planilha eletrônica XML 2003 do Microsoft Excel. Os outros tipos de file
+não são suportados pelo cockpit de migração do SAP S/4HANA.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO_UT"><Data ss:Type="String">Informações importantes
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Não efetue nenhuma modificação na estrutura do modelo de migração,
+especificamente:
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:StyleID="INTRO"><Data ss:Type="String">•</Data></Cell><Cell ss:StyleID="INTRO"><Data ss:Type="String">Não elimine, renomeie ou modifique a ordem de qualquer folha no modelo
+de migração.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:StyleID="INTRO"><Data ss:Type="String">•</Data></Cell><Cell ss:StyleID="INTRO"><Data ss:Type="String">Não modifique o formato de quaisquer células.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:StyleID="INTRO"><Data ss:Type="String">•</Data></Cell><Cell ss:StyleID="INTRO"><Data ss:Type="String">Não utilize fórmulas.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:StyleID="INTRO"><Data ss:Type="String">•</Data></Cell><Cell ss:StyleID="INTRO"><Data ss:Type="String">Não oculte, remova ou modifique a ordem de qualquer uma das colunas no
+modelo de migração.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Nota:
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row ss:AutoFitHeight="0" ss:Height="030">
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">Quaisquer modificações nas folhas resultarão em uma estrutura XML
+corrompida. Esses modelos de migração modificados não são suportados
+pelo cockpit de migração do SAP S/4HANA.
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row>
+<Cell ss:Index="2" ss:StyleID="INTRO"/>
+<Cell ss:MergeAcross="1" ss:StyleID="INTRO"><Data ss:Type="String">
+</Data></Cell><Cell ss:StyleID="INTRO"/></Row>
+<Row><Cell ss:Index="2" ss:StyleID="INTRO"/><Cell ss:StyleID="INTRO"/><Cell ss:StyleID="INTRO"/><Cell ss:StyleID="INTRO"/></Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <FitToPage/>
+   <Print>
+    <FitHeight>99</FitHeight>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <TabColorIndex>9</TabColorIndex>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>3</SplitHorizontal>
+   <TopRowBottomPane>3</TopRowBottomPane>
+   <ActivePane>2</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+     <ActiveRow>2</ActiveRow>
+    </Pane>
+   </Panes>
+   <ProtectObjects>True</ProtectObjects>
+   <ProtectScenarios>True</ProtectScenarios>
+   <AllowSizeCols/>
+   <AllowSizeRows/>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Lista de campos" ss:Protected="1">
+  <Table ss:ExpandedColumnCount="11" x:FullColumns="1" x:FullRows="1" ss:StyleID="BACKGROUND" ss:DefaultRowHeight="15">
+   <Column ss:AutoFitWidth="0" ss:Width="14.25"/>
+   <Column ss:StyleID="BACKGROUND" ss:AutoFitWidth="0" ss:Width="66.75"/>
+   <Column ss:StyleID="BACKGROUND" ss:AutoFitWidth="0" ss:Width="87.75"/>
+   <Column ss:StyleID="BACKGROUND" ss:AutoFitWidth="0" ss:Width="171.75"/>
+   <Column ss:StyleID="BACKGROUND" ss:AutoFitWidth="0" ss:Width="135"/>
+   <Column ss:StyleID="BACKGROUND" ss:AutoFitWidth="0" ss:Width="82.5"/>
+   <Column ss:StyleID="BACKGROUND" ss:AutoFitWidth="0" ss:Width="56.25" ss:Span="1"/>
+   <Column ss:Index="9" ss:StyleID="BACKGROUND" ss:Hidden="1" ss:AutoFitWidth="0" ss:Width="56.25" ss:Span="1"/>
+   <Column ss:Index="11" ss:AutoFitWidth="0" ss:Width="14.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="30" ss:StyleID="TITLE">
+    <Cell ss:MergeAcross="8"><Data ss:Type="String">Lista de campos para objeto de migração: Banco</Data><NamedCell ss:Name="Fields"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="VERSION">
+    <Cell ss:MergeAcross="8"><Data ss:Type="String">Version SAP S/4HANA 2023 - Escopo padrão - 21.09.2026 © Copyright SAP SE. All rights reserved.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="INFORMATION">
+    <Cell ss:Index="2" ss:MergeAcross="6"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:Index="4">
+    <Cell ss:Index="2" ss:StyleID="FIELDHEADER"><Data ss:Type="String">Nome da folha</Data></Cell>
+    <Cell ss:StyleID="FIELDHEADER"><Data ss:Type="String">Nome do grupo</Data></Cell>
+    <Cell ss:StyleID="FIELDHEADER"><Data ss:Type="String">Descrição do campo</Data></Cell>
+    <Cell ss:StyleID="FIELDHEADER"><Data ss:Type="String">Importância</Data></Cell>
+    <Cell ss:StyleID="FIELDHEADER"><Data ss:Type="String">Tipo</Data></Cell>
+    <Cell ss:StyleID="FIELDHEADER"><Data ss:Type="String">Comprimento</Data></Cell>
+    <Cell ss:StyleID="FIELDHEADER"><Data ss:Type="String">Decimal</Data></Cell>
+    <Cell ss:StyleID="FIELDHEADER"><Data ss:Type="String">Estrutura SAP</Data></Cell>
+    <Cell ss:StyleID="FIELDHEADER"><Data ss:Type="String">Campo SAP</Data></Cell>
+   </Row>
+<Row>
+<Cell ss:Index="2" ss:MergeAcross="8" ss:StyleID="FIELDHEADERMAND"><Data ss:Type="String">Mestre de bancos (obrigatório)</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="2" ss:MergeDown="0011" ss:StyleID="FIELDLIST"/>
+<Cell ss:Index="3" ss:MergeDown="0001" ss:StyleID="FIELDLIST"><Data ss:Type="String">Chave</Data></Cell>
+<Cell ss:Index="4" ss:StyleID="FIELDLIST"><Data ss:Type="String">Chave do país/região do banco</Data></Cell>
+<Cell ss:Index="5" ss:StyleID="FIELDLIST"><Data ss:Type="String">obrigatório para folha</Data></Cell>
+<Cell ss:Index="6" ss:StyleID="FIELDLIST"><Data ss:Type="String">Texto</Data></Cell>
+<Cell ss:Index="7" ss:StyleID="FIELDLIST"><Data ss:Type="String">80    </Data></Cell>
+<Cell ss:Index="8" ss:StyleID="FIELDLIST"><Data ss:Type="String"></Data></Cell>
+<Cell ss:Index="9" ss:StyleID="FIELDLIST"><Data ss:Type="String">S_BNKA</Data></Cell>
+<Cell ss:Index="10" ss:StyleID="FIELDLIST"><Data ss:Type="String">BANKS</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="4" ss:StyleID="FIELDLIST"><Data ss:Type="String">Chave do banco</Data></Cell>
+<Cell ss:Index="5" ss:StyleID="FIELDLIST"><Data ss:Type="String">obrigatório para folha</Data></Cell>
+<Cell ss:Index="6" ss:StyleID="FIELDLIST"><Data ss:Type="String">Texto</Data></Cell>
+<Cell ss:Index="7" ss:StyleID="FIELDLIST"><Data ss:Type="String">80    </Data></Cell>
+<Cell ss:Index="8" ss:StyleID="FIELDLIST"><Data ss:Type="String"></Data></Cell>
+<Cell ss:Index="9" ss:StyleID="FIELDLIST"><Data ss:Type="String">S_BNKA</Data></Cell>
+<Cell ss:Index="10" ss:StyleID="FIELDLIST"><Data ss:Type="String">BANKL</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="3" ss:MergeDown="0004" ss:StyleID="FIELDLIST"><Data ss:Type="String">Endereço</Data></Cell>
+<Cell ss:Index="4" ss:StyleID="FIELDLIST"><Data ss:Type="String">Nome do banco</Data></Cell>
+<Cell ss:Index="5" ss:StyleID="FIELDLIST"><Data ss:Type="String">obrigatório para folha</Data></Cell>
+<Cell ss:Index="6" ss:StyleID="FIELDLIST"><Data ss:Type="String">Texto</Data></Cell>
+<Cell ss:Index="7" ss:StyleID="FIELDLIST"><Data ss:Type="String">60    </Data></Cell>
+<Cell ss:Index="8" ss:StyleID="FIELDLIST"><Data ss:Type="String"></Data></Cell>
+<Cell ss:Index="9" ss:StyleID="FIELDLIST"><Data ss:Type="String">S_BNKA</Data></Cell>
+<Cell ss:Index="10" ss:StyleID="FIELDLIST"><Data ss:Type="String">BANKA</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="4" ss:StyleID="FIELDLIST"><Data ss:Type="String">Região (estado, província, país)</Data></Cell>
+<Cell ss:Index="5" ss:StyleID="FIELDLIST"><Data ss:Type="String"></Data></Cell>
+<Cell ss:Index="6" ss:StyleID="FIELDLIST"><Data ss:Type="String">Texto</Data></Cell>
+<Cell ss:Index="7" ss:StyleID="FIELDLIST"><Data ss:Type="String">80    </Data></Cell>
+<Cell ss:Index="8" ss:StyleID="FIELDLIST"><Data ss:Type="String"></Data></Cell>
+<Cell ss:Index="9" ss:StyleID="FIELDLIST"><Data ss:Type="String">S_BNKA</Data></Cell>
+<Cell ss:Index="10" ss:StyleID="FIELDLIST"><Data ss:Type="String">PROVZ</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="4" ss:StyleID="FIELDLIST"><Data ss:Type="String">Número e rua</Data></Cell>
+<Cell ss:Index="5" ss:StyleID="FIELDLIST"><Data ss:Type="String"></Data></Cell>
+<Cell ss:Index="6" ss:StyleID="FIELDLIST"><Data ss:Type="String">Texto</Data></Cell>
+<Cell ss:Index="7" ss:StyleID="FIELDLIST"><Data ss:Type="String">35    </Data></Cell>
+<Cell ss:Index="8" ss:StyleID="FIELDLIST"><Data ss:Type="String"></Data></Cell>
+<Cell ss:Index="9" ss:StyleID="FIELDLIST"><Data ss:Type="String">S_BNKA</Data></Cell>
+<Cell ss:Index="10" ss:StyleID="FIELDLIST"><Data ss:Type="String">STRAS</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="4" ss:StyleID="FIELDLIST"><Data ss:Type="String">Município</Data></Cell>
+<Cell ss:Index="5" ss:StyleID="FIELDLIST"><Data ss:Type="String"></Data></Cell>
+<Cell ss:Index="6" ss:StyleID="FIELDLIST"><Data ss:Type="String">Texto</Data></Cell>
+<Cell ss:Index="7" ss:StyleID="FIELDLIST"><Data ss:Type="String">35    </Data></Cell>
+<Cell ss:Index="8" ss:StyleID="FIELDLIST"><Data ss:Type="String"></Data></Cell>
+<Cell ss:Index="9" ss:StyleID="FIELDLIST"><Data ss:Type="String">S_BNKA</Data></Cell>
+<Cell ss:Index="10" ss:StyleID="FIELDLIST"><Data ss:Type="String">ORT01</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="4" ss:StyleID="FIELDLIST"><Data ss:Type="String">Agência bancária</Data></Cell>
+<Cell ss:Index="5" ss:StyleID="FIELDLIST"><Data ss:Type="String"></Data></Cell>
+<Cell ss:Index="6" ss:StyleID="FIELDLIST"><Data ss:Type="String">Texto</Data></Cell>
+<Cell ss:Index="7" ss:StyleID="FIELDLIST"><Data ss:Type="String">40    </Data></Cell>
+<Cell ss:Index="8" ss:StyleID="FIELDLIST"><Data ss:Type="String"></Data></Cell>
+<Cell ss:Index="9" ss:StyleID="FIELDLIST"><Data ss:Type="String">S_BNKA</Data></Cell>
+<Cell ss:Index="10" ss:StyleID="FIELDLIST"><Data ss:Type="String">BRNCH</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="3" ss:MergeDown="0003" ss:StyleID="FIELDLIST"><Data ss:Type="String">Dados de controle</Data></Cell>
+<Cell ss:Index="4" ss:StyleID="FIELDLIST"><Data ss:Type="String">Código SWIFT p/pagamentos internacionais</Data></Cell>
+<Cell ss:Index="5" ss:StyleID="FIELDLIST"><Data ss:Type="String"></Data></Cell>
+<Cell ss:Index="6" ss:StyleID="FIELDLIST"><Data ss:Type="String">Texto</Data></Cell>
+<Cell ss:Index="7" ss:StyleID="FIELDLIST"><Data ss:Type="String">11    </Data></Cell>
+<Cell ss:Index="8" ss:StyleID="FIELDLIST"><Data ss:Type="String"></Data></Cell>
+<Cell ss:Index="9" ss:StyleID="FIELDLIST"><Data ss:Type="String">S_BNKA</Data></Cell>
+<Cell ss:Index="10" ss:StyleID="FIELDLIST"><Data ss:Type="String">SWIFT</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="4" ss:StyleID="FIELDLIST"><Data ss:Type="String">Conta corrente postal</Data></Cell>
+<Cell ss:Index="5" ss:StyleID="FIELDLIST"><Data ss:Type="String"></Data></Cell>
+<Cell ss:Index="6" ss:StyleID="FIELDLIST"><Data ss:Type="String">Texto</Data></Cell>
+<Cell ss:Index="7" ss:StyleID="FIELDLIST"><Data ss:Type="String">1     </Data></Cell>
+<Cell ss:Index="8" ss:StyleID="FIELDLIST"><Data ss:Type="String"></Data></Cell>
+<Cell ss:Index="9" ss:StyleID="FIELDLIST"><Data ss:Type="String">S_BNKA</Data></Cell>
+<Cell ss:Index="10" ss:StyleID="FIELDLIST"><Data ss:Type="String">XPGRO</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="4" ss:StyleID="FIELDLIST"><Data ss:Type="String">Nº da agência bancária</Data></Cell>
+<Cell ss:Index="5" ss:StyleID="FIELDLIST"><Data ss:Type="String"></Data></Cell>
+<Cell ss:Index="6" ss:StyleID="FIELDLIST"><Data ss:Type="String">Texto</Data></Cell>
+<Cell ss:Index="7" ss:StyleID="FIELDLIST"><Data ss:Type="String">15    </Data></Cell>
+<Cell ss:Index="8" ss:StyleID="FIELDLIST"><Data ss:Type="String"></Data></Cell>
+<Cell ss:Index="9" ss:StyleID="FIELDLIST"><Data ss:Type="String">S_BNKA</Data></Cell>
+<Cell ss:Index="10" ss:StyleID="FIELDLIST"><Data ss:Type="String">BNKLZ</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="4" ss:StyleID="FIELDLIST"><Data ss:Type="String">Grupo de bancos (rede bancária)</Data></Cell>
+<Cell ss:Index="5" ss:StyleID="FIELDLIST"><Data ss:Type="String"></Data></Cell>
+<Cell ss:Index="6" ss:StyleID="FIELDLIST"><Data ss:Type="String">Texto</Data></Cell>
+<Cell ss:Index="7" ss:StyleID="FIELDLIST"><Data ss:Type="String">2     </Data></Cell>
+<Cell ss:Index="8" ss:StyleID="FIELDLIST"><Data ss:Type="String"></Data></Cell>
+<Cell ss:Index="9" ss:StyleID="FIELDLIST"><Data ss:Type="String">S_BNKA</Data></Cell>
+<Cell ss:Index="10" ss:StyleID="FIELDLIST"><Data ss:Type="String">BGRUP</Data></Cell>
+</Row>
+<Row>
+<Cell ss:Index="3" ss:MergeDown="0000" ss:StyleID="FIELDLIST"><Data ss:Type="String">Indicador de Controle</Data></Cell>
+<Cell ss:Index="4" ss:StyleID="FIELDLIST"><Data ss:Type="String">Não sobregravar dados existentes</Data></Cell>
+<Cell ss:Index="5" ss:StyleID="FIELDLIST"><Data ss:Type="String"></Data></Cell>
+<Cell ss:Index="6" ss:StyleID="FIELDLIST"><Data ss:Type="String">Texto</Data></Cell>
+<Cell ss:Index="7" ss:StyleID="FIELDLIST"><Data ss:Type="String">1     </Data></Cell>
+<Cell ss:Index="8" ss:StyleID="FIELDLIST"><Data ss:Type="String"></Data></Cell>
+<Cell ss:Index="9" ss:StyleID="FIELDLIST"><Data ss:Type="String">S_BNKA</Data></Cell>
+<Cell ss:Index="10" ss:StyleID="FIELDLIST"><Data ss:Type="String">ISNOTOVERWRITE</Data></Cell>
+</Row>
+<Row>
+</Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <FitToPage/>
+   <Print>
+    <FitHeight>99</FitHeight>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <TabColorIndex>9</TabColorIndex>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>4</SplitHorizontal>
+   <TopRowBottomPane>4</TopRowBottomPane>
+   <ActivePane>2</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+     <ActiveRow>2</ActiveRow>
+    </Pane>
+   </Panes>
+   <ProtectObjects>True</ProtectObjects>
+   <ProtectScenarios>True</ProtectScenarios>
+   <AllowSizeCols/>
+   <AllowSizeRows/>
+  </WorksheetOptions>
+ </Worksheet>
+  <Worksheet ss:Name="Mestre de bancos" ss:Protected="1">
+    <Table ss:ExpandedColumnCount="999" ss:ExpandedRowCount="8" x:FullColumns="1" x:FullRows="1" ss:StyleID="BACKGROUND" ss:DefaultRowHeight="15">
+<Column ss:StyleID="FIELDMAND" ss:Width="120"/>
+<Column ss:StyleID="FIELDMAND" ss:Width="120"/>
+<Column ss:StyleID="FIELDMAND" ss:Width="120"/>
+<Column ss:StyleID="FIELD" ss:Width="120"/>
+<Column ss:StyleID="FIELD" ss:Width="120"/>
+<Column ss:StyleID="FIELD" ss:Width="120"/>
+<Column ss:StyleID="FIELD" ss:Width="120"/>
+<Column ss:StyleID="FIELD" ss:Width="120"/>
+<Column ss:StyleID="FIELD" ss:Width="120"/>
+<Column ss:StyleID="FIELD" ss:Width="120"/>
+<Column ss:StyleID="FIELD" ss:Width="120"/>
+<Column ss:StyleID="FIELD" ss:Width="120"/>
+      <Row ss:AutoFitHeight="0" ss:Height="30" ss:StyleID="TITLE">
+        <Cell ss:MergeAcross="14">
+          <Data ss:Type="String">Dados de origem para objeto de migração:  Banco</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0" ss:StyleID="VERSION">
+        <Cell ss:MergeAcross="14">
+          <Data ss:Type="String">Version SAP S/4HANA 2023 - Escopo padrão - 21.09.2026 © Copyright SAP SE. All rights reserved.</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0" ss:Height="12" ss:StyleID="BACKGROUND">
+        <Cell ss:MergeAcross="14"/>
+      </Row>
+      <Row ss:AutoFitHeight="0" ss:Height="14.0625" ss:Hidden="1" ss:StyleID="BACKGROUND">
+        <Cell>
+          <Data ss:Type="String">S_BNKA</Data>
+        </Cell>
+        <Cell/>
+        <Cell/>
+        <Cell/>
+        <Cell/>
+      </Row>
+      <Row ss:AutoFitHeight="0" ss:Hidden="1">
+<Cell ss:Index="001"><Data ss:Type="String">BANKS</Data></Cell>
+<Cell ss:Index="002"><Data ss:Type="String">BANKL</Data></Cell>
+<Cell ss:Index="003"><Data ss:Type="String">BANKA</Data></Cell>
+<Cell ss:Index="004"><Data ss:Type="String">PROVZ</Data></Cell>
+<Cell ss:Index="005"><Data ss:Type="String">STRAS</Data></Cell>
+<Cell ss:Index="006"><Data ss:Type="String">ORT01</Data></Cell>
+<Cell ss:Index="007"><Data ss:Type="String">BRNCH</Data></Cell>
+<Cell ss:Index="008"><Data ss:Type="String">SWIFT</Data></Cell>
+<Cell ss:Index="009"><Data ss:Type="String">XPGRO</Data></Cell>
+<Cell ss:Index="010"><Data ss:Type="String">BNKLZ</Data></Cell>
+<Cell ss:Index="011"><Data ss:Type="String">BGRUP</Data></Cell>
+<Cell ss:Index="012"><Data ss:Type="String">ISNOTOVERWRITE</Data></Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0" ss:Hidden="1">
+<Cell ss:Index="001"><Data ss:Type="String">ETE;80;0;C;80;0</Data></Cell>
+<Cell ss:Index="002"><Data ss:Type="String">ETE;80;0;C;80;0</Data></Cell>
+<Cell ss:Index="003"><Data ss:Type="String">ETE;60;0;C;60;0</Data></Cell>
+<Cell ss:Index="004"><Data ss:Type="String">ETE;80;0;C;80;0</Data></Cell>
+<Cell ss:Index="005"><Data ss:Type="String">ETE;35;0;C;35;0</Data></Cell>
+<Cell ss:Index="006"><Data ss:Type="String">ETE;35;0;C;35;0</Data></Cell>
+<Cell ss:Index="007"><Data ss:Type="String">ETE;40;0;C;40;0</Data></Cell>
+<Cell ss:Index="008"><Data ss:Type="String">ETE;11;0;C;11;0</Data></Cell>
+<Cell ss:Index="009"><Data ss:Type="String">ETE;1;0;C;1;0</Data></Cell>
+<Cell ss:Index="010"><Data ss:Type="String">ETE;15;0;C;15;0</Data></Cell>
+<Cell ss:Index="011"><Data ss:Type="String">ETE;2;0;C;2;0</Data></Cell>
+<Cell ss:Index="012"><Data ss:Type="String">ETE;1;0;C;1;0</Data></Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+<Cell ss:MergeAcross="001" ss:StyleID="C_HEADER1"><Data ss:Type="String">Chave</Data></Cell>
+<Cell ss:MergeAcross="004" ss:StyleID="C_HEADER1"><Data ss:Type="String">Endereço</Data></Cell>
+<Cell ss:MergeAcross="003" ss:StyleID="C_HEADER1"><Data ss:Type="String">Dados de controle</Data></Cell>
+<Cell ss:MergeAcross="000" ss:StyleID="C_HEADER1"><Data ss:Type="String">Indicador de Controle</Data></Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0">
+<Cell ss:StyleID="C_HEADER2" ss:Index="001"><Data ss:Type="String">Chave do país/região do banco*&#10;&#10;Identifica o país/região no qual o banco está localizado.&#10;A chave do país/região determina as regras segundo as quais os restantes dados bancários, por exemplo, número da agência bancária e número da conta, são validados.&#10;&#10;Tipo: Texto&#10;Comprimento: 80</Data></Cell>
+<Cell ss:StyleID="C_HEADER2" ss:Index="002"><Data ss:Type="String">Chave do banco*&#10;&#10;Neste campo, você indica a chave do banco na qual os dados do banco do respectivo país/região são armazenados.&#10;O comprimento da chave do banco é decidida no país/região do banco. Por exemplo, se o país/região do banco for DE, o comprimento da chave do banco deve ser 8; se o país/região do banco for IT, o comprimento da chave do banco deve ser 10.&#10;&#10;Tipo: Texto&#10;Comprimento: 80</Data></Cell>
+<Cell ss:StyleID="C_HEADER2" ss:Index="003"><Data ss:Type="String">Nome do banco*&#10;&#10;O nome com o qual o banco funciona.&#10;&#10;Tipo: Texto&#10;Comprimento: 60</Data></Cell>
+<Cell ss:StyleID="C_HEADER2" ss:Index="004"><Data ss:Type="String">Região (estado, província, país)&#10;&#10;Em alguns países/regiões, a região faz parte do endereço. O significado depende do país/região.&#10;&#10;Tipo: Texto&#10;Comprimento: 80</Data></Cell>
+<Cell ss:StyleID="C_HEADER2" ss:Index="005"><Data ss:Type="String">Número e rua&#10;&#10;Rua e número como parte do endereço.&#10;&#10;Tipo: Texto&#10;Comprimento: 35</Data></Cell>
+<Cell ss:StyleID="C_HEADER2" ss:Index="006"><Data ss:Type="String">Município&#10;&#10;Name of the city as a part of the address.&#10;&#10;Tipo: Texto&#10;Comprimento: 35</Data></Cell>
+<Cell ss:StyleID="C_HEADER2" ss:Index="007"><Data ss:Type="String">Agência bancária&#10;&#10;O campo contém o nome da sucursal da instituição financeira.&#10;&#10;Tipo: Texto&#10;Comprimento: 40</Data></Cell>
+<Cell ss:StyleID="C_HEADER2" ss:Index="008"><Data ss:Type="String">Código SWIFT p/pagamentos internacionais&#10;&#10;Uniquely identifies a bank throughout the world. SWIFT stands for Society for Worldwide Interbank Financial Telecommunication. BIC stands for Bank Identifier Code.&#10;&#10;Tipo: Texto&#10;Comprimento: 11</Data></Cell>
+<Cell ss:StyleID="C_HEADER2" ss:Index="009"><Data ss:Type="String">Conta corrente postal&#10;&#10;This indicator causes the account to be treated as a post office bank current account.&#10;&#10;&#10;Tipo: Texto&#10;Comprimento: 1</Data></Cell>
+<Cell ss:StyleID="C_HEADER2" ss:Index="010"><Data ss:Type="String">Nº da agência bancária&#10;&#10;Este campo contém o número da agência bancária ou o código do banco.&#10;Verifique o valor BNKEY na tabela T005 para decidir se a coluna é preenchida.&#10;1. Nº agência bancária&#10;2. Obsoleto&#10;3. Atribuir internamente&#10;4. Atribuir externamente&#10;Não faz sentido o cliente preencher o valor para o número da agência bancária se bnkey não for '4'.&#10;&#10;Tipo: Texto&#10;Comprimento: 15</Data></Cell>
+<Cell ss:StyleID="C_HEADER2" ss:Index="011"><Data ss:Type="String">Grupo de bancos (rede bancária)&#10;&#10;É usado para classificar os bancos de modo que as operações de pagamento dentro de um grupo sejam processadas o mais rápido possível (otimização da via bancária).&#10;&#10;Tipo: Texto&#10;Comprimento: 2</Data></Cell>
+<Cell ss:StyleID="C_HEADER2" ss:Index="012"><Data ss:Type="String">Não sobregravar dados existentes&#10;&#10;Este é um campo indicador para determinar se um banco existente deve ou não ser sobregravado.&#10;Se o campo indicador estiver em branco, o sistema sobregrava um banco existente. Se você não pretender sobregravar um banco existente, insira X.&#10;&#10;Nota:&#10;se você inserir X e existir um banco no sistema, é emitida uma mensagem de erro.&#10;&#10;Tipo: Texto&#10;Comprimento: 1</Data></Cell>
+      </Row>
+    </Table>
+    <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+      <PageSetup>
+        <Header x:Margin="0.3"/>
+        <Footer x:Margin="0.3"/>
+        <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+      </PageSetup>
+      <Unsynced/>
+      <Print>
+        <ValidPrinterInfo/>
+        <PaperSizeIndex>9</PaperSizeIndex>
+        <HorizontalResolution>600</HorizontalResolution>
+        <VerticalResolution>600</VerticalResolution>
+      </Print>
+      <TabColorIndex>51</TabColorIndex>
+      <Selected/>
+      <FreezePanes/>
+      <FrozenNoSplit/>
+      <SplitHorizontal>8</SplitHorizontal>
+      <TopRowBottomPane>8</TopRowBottomPane>
+      <SplitVertical>2</SplitVertical>
+      <LeftColumnRightPane>2</LeftColumnRightPane>
+      <ActivePane>0</ActivePane>
+      <Panes>
+        <Pane>
+          <Number>3</Number>
+        </Pane>
+        <Pane>
+          <Number>1</Number>
+        </Pane>
+        <Pane>
+          <Number>2</Number>
+        </Pane>
+        <Pane>
+          <Number>0</Number>
+          <ActiveRow>7</ActiveRow>
+          <ActiveCol>0</ActiveCol>
+        </Pane>
+      </Panes>
+      <ProtectObjects>False</ProtectObjects>
+      <ProtectScenarios>False</ProtectScenarios>
+      <AllowSizeCols/>
+      <AllowSizeRows/>
+    </WorksheetOptions>
+  </Worksheet>
+</Workbook>
